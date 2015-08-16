@@ -1,0 +1,70 @@
+.seat{
+	height: 40px;
+	width: 40px;
+}
+.seatElem1{
+	background-color: green;
+	margin: 0 10px 0 0;
+	height: 15px;
+    width: 15px;
+}
+.seatElem2{
+	background-color: green;
+	height: 15px;
+    width: 15px;
+	margin: 0 0 10px 0;
+}
+.seatElem{
+	background-color: #fff;
+	height: 15px;
+    width: 15px;
+    margin: 0 0 0 0;
+    border: 1px solid;
+}
+.selectedSeat{
+	background-color: green;
+	height: 15px;
+    width: 15px;
+    margin: 0 0 0 0;
+    border: 1px solid;
+}
+.bookedSeat{
+	background-color: red;
+	height: 15px;
+    width: 15px;
+    margin: 0 0 0 0;
+    border: 1px solid;
+}
+.error{
+	position: absolute;
+	color: red;
+}
+.specialSeat{
+	position: relative;
+    margin-right: 35px;
+}
+.label{
+	height: 15px;
+    width: 15px;
+    margin: 0 0 0 0;
+    color: black;
+}
+.specialSeat1{
+	position: relative;
+    margin-bottom: 20px;
+    float: left;
+}
+.specialSeat2{
+	position: relative;
+    margin-right: 35px;
+    margin-bottom: 20px;
+}
+.screen{
+	background-color: #5bc0de;
+	width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.listItem{
+	padding-bottom: 10px;
+}
