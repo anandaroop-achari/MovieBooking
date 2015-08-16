@@ -35,9 +35,11 @@ app.controller('ctrlBooking', function($scope){
 		}
 	}
 	$scope.selectSeat=function(m,n){
-		if($scope.tempUser.name === '' && $scope.tempUser.noOfSeats === 0){
+		if($scope.tempUser.name === '' || $scope.tempUser.noOfSeats === 0){
 			$scope.errorMessage = "Please Enter Name And No Of Seats First";
-		} else {
+		} else if($scope.tempUser.noOfSeats>$scope.availableSeats){
+			$scope.errorMessage = "Sorry. " + $scope.tempUser.noOfSeats+" seats are not available";
+		} else{
 			$scope.errorMessage = "";
 		}
 		if($scope.errorMessage === ""){
