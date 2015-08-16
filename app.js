@@ -35,7 +35,12 @@ app.controller('ctrlBooking', function($scope){
 		}
 	}
 	$scope.selectSeat=function(m,n){
-		if($scope.tempUser.name !== '' && $scope.tempUser.noOfSeats !== 0 && $scope.errorMessage === ""){
+		if($scope.tempUser.name === '' && $scope.tempUser.noOfSeats === 0){
+			$scope.errorMessage = "Please Enter Name And No Of Seats First";
+		} else {
+			$scope.errorMessage = "";
+		}
+		if($scope.errorMessage === ""){
 				if($scope.tempUser.selectedSeats.length < $scope.tempUser.noOfSeats && m.booked === 'E'){
 					m.booked = "S";
 					$scope.tempUser.selectedSeats.push({row: n, col: m.col});
